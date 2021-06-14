@@ -32,25 +32,13 @@ the application, you can update the README.md<br>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Out of scope: 
+#Out of scope: 
 Like functionality (Like button shown in the mockup) is out of scope.
 
 
-Course Material
-Topic Link
-Node.js  https://app.pluralsight.com/paths/skill/node-js
-Working with
-Node.js
- https://app.pluralsight.com/paths/skill/working
--with-nodejs
+#Course Material
+#Topic Link
+Node.js  https://app.pluralsight.com/paths/skill/node-js<br>
+
+Working withNode.js
+ https://app.pluralsight.com/paths/skill/working-with-nodejs<br>
