@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetBlogDataUI</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Content</th>
+                    <th>Action</th>
+                </tr>
+                {{# each items}}
+                <tr>
+                    <td> {{this.[0]}}</td>
+                    <td> {{this.[1]}}</td>
+                    <td> {{this.[2]}}</td>
+                    <td>
+                        {{!-- <button onclick="sendData({{this.[3]}})">Edit</button> --}}
+                        <a href="/editblog">Edit</a>
+                        <button onclick="sendData({{this.[3]}})">Delete</button>
+                    </td>
+                </tr>
+                {{/each}}
+
+            </table>
+
+        </div>
+    </div>
+    <script>
+        function sendData(id) {
+            console.log('id=---' + id);
+        }
+    </script>
+</body>
+
+
+</html>

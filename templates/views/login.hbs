@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'
+        rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <title>Login</title>
+
+    <style>
+        footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            background-color: initial;
+            color: currentColor;
+            font-size: medium;
+            line-height: 1;
+            margin-bottom: -11px;
+            vertical-align: auto;
+        }
+            .footer1{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="jumbotron" style="margin-top:auto; margin-bottom:auto" ;>
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title" align="center" style="    font-size: xx-large;
+    font-family: serif;
+    font-weight: bolder;">
+                    Login
+                </div>
+
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                        <form action="/homepage" method="post">
+                            <div class="form-group">
+                                <label class="form-control-label">USERNAME</label>
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">PASSWORD</label>
+                                <input type="password" name="password" class="form-control" i>
+                            </div>
+
+                            <div class="col-lg-12 loginbttm">
+                                <div class="col-lg-6 login-btm login-text">
+                                    <!-- Error Message -->
+                                </div>
+                                <div class="col-lg-6 login-btm login-button">
+                                    <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2"></div>
+            </div>
+        </div>
+        <hr>
+        <footer class="footer">
+
+            <h2>Help</h2>
+            <a href="https://servicedesk.nagarro.com/" target="_blank" class="ga-footer" data-track="Help Center">Help
+                Center</a>
+            <a href="/go/helpforum" target="_blank" class="ga-footer" data-track="Help Forum">Help Forum</a>
+
+            <h2>Community</h2>
+            <a href="https://dev.to/" target="_blank" class="ga-footer" data-track="Blogger Buzz">Blogger Buzz</a>
+
+            <h2>Developers</h2>
+            <a href="/go/devapi" target="_blank" class="ga-footer" data-track="Blogger API">Blogger API</a>
+            <a href="/go/devforum" target="_blank" class="ga-footer" data-track="Developer Forum">Developer Forum</a>
+
+            <a href="/go/terms" target="_blank" class="ga-footer" data-track="Terms of Service">Terms of Service</a>
+            <a href="/go/privacy" target="_blank" class="ga-footer" data-track="Privacy">Privacy</a>
+            <a href="/go/contentpolicy" target="_blank" class="ga-footer" data-track="Content Policy">Content Policy</a>
+
+        </footer>
+         <div class="footer1">
+        <p class="lead"> &copy; copyright 2021 Blog App| Create Blog | Edit the Blog</p>
+    </div>
+</body>
+</html>

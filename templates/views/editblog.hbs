@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Edit Blog Page</title>
+</head>
+<style>
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: initial;
+    color: currentColor;
+    font-size: medium;
+    line-height: 1;
+    margin-bottom: -11px;
+    vertical-align: auto;
+  }
+</style>
+
+<body>
+
+  <h1 style="text-align: center; text-align: center;
+    font-style: oblique;
+    font-size: xxx-large;
+    font-family: auto;"><u>
+      Edit Blog</u>
+  </h1>
+  <div class="jumbotron" align="center">
+    <form action="/blogPost" method="POST">
+      <label for="fname">Title:</label>
+      <input type="text" id="fname" name="title" placeholder="title" autocomplete="off" required><br>
+      <label for="category">Category:</label>
+      <select name="category" id="Technology">
+        <option value="marketing">Marketing</option>
+        <option value="business">Business</option>
+        <option value="study">Study</option>
+        <option value="enviroment">Environment</option>
+      </select>
+      <br>
+      <p>Content:</p>
+      <TEXTAREA name="content" ROWS="20" COLS="100" placeholder="max content limit 1000 words" required></TEXTAREA>
+      <br>
+      {{!-- <input type="text" id="fname" name="fname" placeholder=" maximum content 500 words" autocomplete="off"
+        required><br> --}}
+      {{!-- <button onclick="alert('Hello Poftut.com')">Click on this Button To Say Hello</button> --}}
+      <button onclick="alert('You Blog is under review and get published After Verifying')" class="btn btn-success"
+        value="Submit"> Submit</button>
+      <br>
+      <hr>
+
+      <footer class="footer">
+
+        <h2>Help</h2>
+        <a href="/go/helpcenter" target="_blank" class="ga-footer" data-track="Help Center">Help Center</a>
+        <a href="/go/helpforum" target="_blank" class="ga-footer" data-track="Help Forum">Help Forum</a>
+
+        <h2>Community</h2>
+        <a href="/go/buzz" target="_blank" class="ga-footer" data-track="Blogger Buzz">Blogger Buzz</a>
+
+        <h2>Developers</h2>
+        <a href="/go/devapi" target="_blank" class="ga-footer" data-track="Blogger API">Blogger API</a>
+        <a href="/go/devforum" target="_blank" class="ga-footer" data-track="Developer Forum">Developer Forum</a>
+
+        <a href="/go/terms" target="_blank" class="ga-footer" data-track="Terms of Service">Terms of Service</a>
+        <a href="/go/privacy" target="_blank" class="ga-footer" data-track="Privacy">Privacy</a>
+        <a href="/go/contentpolicy" target="_blank" class="ga-footer" data-track="Content Policy">Content Policy</a>
+
+      </footer>
+
+    </form>
+  </div>
+
+
+
+
+  <!-- //footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>ES6 Page</title>
+  <style>
+    .lead {
+      font-style: inherit;
+      font-family: cursive;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      color: gainsboro;
+    }
+
+/*like and dislkike css*/
+    .fa {
+      font-size: 70px;
+      color: ghostwhite;
+      cursor: pointer;
+      margin-right: 20px;
+      margin-left: 50%;
+      user-select: none;
+    }
+/*on hover the like and dislike button*/
+    .fa:hover {
+      color: lightgreen;
+    }
+
+
+    .footer1 {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: tan;
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      background-color: initial;
+      color: currentColor;
+      font-size: medium;
+      line-height: 1;
+      margin-bottom: -11px;
+      vertical-align: auto;
+    }
+  </style>
+
+</head>
+
+<body background="images/photo6.jpeg" width="" style=" background-repeat: no-repeat; background-attachment: fixed;  
+  background-size: cover;">
+  <u>
+    <h1>
+      <p class="heading " style="font-family: cursive;font-size: xxx-large;font-weight: 900;
+    margin-top: revert;margin-bottom: revert;  margin-left: 30px;margin-right: 15px;">ESE 6 Blog</p>
+    </h1>
+  </u>
+  <div align="center">
+     <img src="images/ESE6.jpeg" width="40%" height="30%" class="rounded-circle center imagestyle">
+  </div> <br>
+  <br>
+
+  <p class="lead" style="margin-left: 20px;margin-right: 20px;">
+    ES6 tutorial provides you the basic and advanced concepts.
+    ES6 or ECMAScript 6 is a scripting language specification which is standardized by ECMAScript International.
+    This specification governs some languages such as JavaScript, ActionScript, and Jscript.
+    ECMAScript is generally used for client-side scripting, and it is also used for writing server applications and
+    services by using Node.js.
+    ES6 allows you to write the code in such a way that makes your code more modern and readable.
+    B y using ES6 features, we write less and do more, so the term 'Write less, do more' suits ES6.
+
+    <br>
+
+    ES6 brought significant changes to the JavaScript language.
+    It introduces several new features such as, block-scoped variables, new loop for iterating over arrays and objects,
+    template literals, and many other enhancements to make JavaScript programming easier and more fun.
+    <br>
+    The Mosaic web browser was released in 1993. As the first browser with a graphical user interface accessible to
+    non-technical people, it played a prominent role in the rapid growth of the nascent World Wide Web.[13] The lead
+    developers of Mosaic then founded the Netscape corporation, which released a more polished browser, Netscape
+    Navigator, in 1994. Navigator quickly became the most used browser.
+    During these formative years of the Web, web pages could only be static, lacking the capability for dynamic behavior
+    after the page was loaded in the browser. There was a desire in the burgeoning web development scene to remove this
+    limitation, so in 1995, Netscape decided to add a scripting language to Navigator. They pursued two routes to
+    achieve this: collaborating with Sun Microsystems to embed the Java programming language, while also hiring Brendan
+    Eich to embed the Scheme language.
+    Netscape management soon decided that the best option was for Eich to devise a new language, with syntax similar to
+    Java and less like Scheme or other extant scripting languages. Although the new language and its interpreter
+    implementation were called LiveScript when first shipped as part of a Navigator beta in September 1995, the name was
+    changed to JavaScript for the official release in December.
+    The choice of the JavaScript name has caused confusion, sometimes giving the impression that it is a spin-off of
+    Java. Since Java was the hot new programming language at the time, this has been characterized as a marketing ploy
+    by Netscape to give its own new language cachet.[16]
+    Adoption by Microsoft
+  </p>
+
+  <u>
+    <b>
+      <h1 class="display-1">
+        <p class="lead" style="margin-left: 20px;margin-right: 20px;">Blog created by:</p>
+      </h1>
+    </b>
+  </u>
+  <p style="margin-left: 15px;font-size: larger;">Shubham Tomar</p>
+  <a href="https://www.blogger.com/blog/posts/5633868168385153821?pli=1" style="font-size: x-large;
+    font-style: italic;font-family: cursive;color: darkblue; margin-left: 20px;margin-right: 20px;">@tomarshabh2199</a>
+  <br>
+  <br>
+
+  <i onclick="LikeButton(this)" class="fa fa-thumbs-up" aria-hidden="true">Like-Counts</i>
+
+  {{!-- like and upvote button --}}
+  <script>
+    var likecount=0;
+    function LikeButton(x) {
+      likecount++;
+      x.classList.toggle("fa-thumbs-down");
+    }
+  </script>
+
+  <h1 class=" display-4" style="font-size: 2.5rem;font-weight: bolder;line-height: 2.2;font-family: cursive; margin-left: 15px"> Web References</h1>
+
+  <div class="container" style="overflow:auto">
+
+    <a href="https://www.w3schools.com/Js/js_es6.asp" type="button" class="btn btn-primary btn-lg" style="padding: -5.5rem 1rem;
+    font-size: 1.25rem;line-height: -4.5;border-radius: 23.3rem;">More About ESE6 features</a>
+    <br>
+    <br>
+
+    <!-- <a href="https://www.w3schools.com/Js/js_es6.asp" class="btn btn-info" role="button">Link 1</a><br> -->
+    <a href="https://www.w3schools.com/Js/js_es6.asp" type="button" class="btn btn-primary btn-lg" style="padding: -5.5rem 1rem;
+    font-size: 1.25rem;line-height: -4.5;border-radius: 23.3rem;">Complete Guide and Documentation</a>
+    <br>
+    <br>
+
+
+
+    <!-- //Pages Go to Section
+    <div class="carousel--dots">
+    <div class="page p dots active" data-page="1">1</div>
+    <div class="page p dots " data-page="2">2</div>
+    </div> -->
+
+    <!-- //upvote like code -->
+    <!-- <button data-type="like" class="vote-this" style="margin-right:0;margin-left:0">
+        <i class="gfg-icon gfg-icon_like favoriteIcon"></i>
+        <span class="favoriteLike">Like</span><figure class="favoriteText">0</figure></button> -->
+  </div>
+  <br>
+
+  <p style="font-size: xx-large;font-family: cursive;margin-left: 15px;">Recommended Articles</p>
+  <div class="text" style="margin-left: 15px;margin-right: 15px; font-size:large;">1.Given a matrix mat][][] of size M x N which represents the topographic map of a region, and
+    0 denotes land and 1 denotes elevation,… <span class="read-more"><a
+        href="https://www.geeksforgeeks.org/maximum-height-of-an-elevation-possible-such-that-adjacent-matrix-cells-have-a-difference-of-at-most-height-1/">Read
+        More</a>
+    </span></div>
+  <br>
+  <div class="text" style="margin-left: 15px;margin-right: 15px; font-size:large;">2.Given an undirected graph consisting of N vertices and M edges and an array edges[][], with
+    each
+    row representing two vertices connected by an edge,… <span class="read-more"><a
+        href="https://www.geeksforgeeks.org/minimum-degree-of-three-nodes-forming-a-triangle-in-a-given-graph/">Read
+        More</a>
+    </span></div>
+  <br>
+  <div class="text" style="margin-left: 15px;margin-right: 15px; font-size:large;">3.Given an array arr[] consisting of N integers, the task is to find the maximum sum of any
+    subarray
+    possible after removing at most one… <span class="read-more"><a
+        href="https://www.geeksforgeeks.org/maximum-subarray-sum-possible-after-removing-at-most-one-subarray/">Read
+        More</a>
+    </span></div>
+
+  <hr class="hr1">
+  <!-- //footer -->
+  <footer class="footer">
+    <h2>Help</h2>
+    <a href="https://servicedesk.nagarro.com/" target="_blank" class="ga-footer" data-track="Help Center">Help
+      Center</a>
+    <a href="/go/helpforum" target="_blank" class="ga-footer" data-track="Help Forum">Help Forum</a>
+
+    <h2>Community</h2>
+    <a href="https://dev.to/" target="_blank" class="ga-footer" data-track="Blogger Buzz">Blogger Buzz</a>
+
+    <h2>Developers</h2>
+    <a href="/go/devapi" target="_blank" class="ga-footer" data-track="Blogger API">Blogger API</a>
+    <a href="/go/devforum" target="_blank" class="ga-footer" data-track="Developer Forum">Developer Forum</a>
+
+    <a href="/go/terms" target="_blank" class="ga-footer" data-track="Terms of Service">Terms of Service</a>
+    <a href="/go/privacy" target="_blank" class="ga-footer" data-track="Privacy">Privacy</a>
+    <a href="/go/contentpolicy" target="_blank" class="ga-footer" data-track="Content Policy">Content Policy</a>
+
+  </footer>
+
+  <div class="footer1">
+    <p class="lead"> &copy; copyright 2021 Blog App| Create Blog | Edit the Blog</p>
+  </div>
+  <br>
+</body>
+
+</html>

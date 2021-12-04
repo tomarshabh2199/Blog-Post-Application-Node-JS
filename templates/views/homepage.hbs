@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+.lead {
+        font-size: medium;
+        font-family: cursive;
+        }
+
+.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        }
+
+.mydiv {
+        border-style: double;
+        border-color: black;
+        border-width: 1rem;
+        background-color: aliceblue;
+        text-align: center;
+            /* clear:both */
+        }
+        
+.card{
+   display:inline-block;
+    margin:0 10px 10px;
+    width:18%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+        
+
+        /* p.dotted{ border-style: dotted;} */
+</style>
+<title>
+    Blog Post Aplication </title>
+</head>
+
+<body background="images/photo.jpeg">
+    <a href="/logout" type="button" style="margin-left: 1181px;" value="submit" class="btn btn-info">Logout</a>
+    <div class="mydiv">
+        <h1 class="titleheading" style="font-family: fantasy;font-size: xxx-large;color: currentcolor;"> Blog Post Application</h1>
+        <a href="/newblog" type="button" value="submit" class="btn btn-info">Create your Blog Post</a>
+
+        <!-- <div class="navbar-collapse collapse"> -->
+        <div class="jumbotron">
+            <h1 class=" display-2"> Hello, Users</h1>
+            <p class="lead">Now here you view the post, update the post and bookmark the post which you like for read in
+                the future
+                A blog (a truncation of "weblog") is a discussion or informational website published on the World Wide
+                Web consisting of discrete, often informal diary-style text entries (posts).
+                Posts are typically displayed in reverse chronological order, so that the most recent post appears
+                first, at the top of the web page.
+                Until 2009, blogs were usually the work of a single individual,[citation needed] occasionally of a small
+                group, and often covered a single subject or topic.
+                In the 2010s, "multi-author blogs" (MABs) emerged, featuring the writing of multiple authors and
+                sometimes professionally edited. MABs from newspapers, other media outlets, universities, think tanks,
+                advocacy groups, and similar institutions account for an increasing quantity of blog traffic.
+                The rise of Twitter and other "microblogging" systems helps integrate MABs and single-author blogs into
+                the news media.
+                Blog can also be used as a verb, meaning to maintain or add content to a blog.
+            </p>
+
+            <section class="get">
+                <h3>users created Blog</h3>
+                <a href="/get-data">User Added Blog</a>
+            </section>
+
+            <!-- <p class="dotted"> -->
+            <hr class="my-4">
+            <h2>
+            <p align="left" class="listofblogs" style="font-family: cursive;font-size: xxx-large;">List of Blogs are-</p>
+            </h2>
+
+            {{!-- <p class="lead">
+            <p><input type="button" onclick="location.href='/reduxblog'" style=" border-radius: 23.3rem;
+    font-size: x-large;
+" value="1.This is the best Redux Post"></p> --}}
+       <div class="card" style="width: 15rem;">
+      {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+      <div class="card-body">
+        <h5 class="card-title">Redux Post</h5>
+        <p class="card-text">Angular is frontened programming langugage</p>
+        <a href="/reduxblog" class="btn btn-primary">Go to Redux Post</a>
+      </div>
+    </div>
+
+            {{!-- <!-- <a href="redux.html" class="btn btn-info" role="button">This is the best redux post</a> -->
+            <p><input type="button" onclick="location.href='/es6blog'" style=" border-radius: 23.3rem;
+    font-size: x-large;
+" value="2.This is the best ES6 Post"></p> --}}
+
+<div class="card" style="width: 15rem;">
+      {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+      <div class="card-body">
+        <h5 class="card-title">ESE6 Post</h5>
+        <p class="card-text">Angular is frontened programming langugage</p>
+        <a href="/es6blog" class="btn btn-primary">Go to ESE6 Post</a>
+      </div>
+    </div>
+            <!-- <h2><a class="btn btn-primary btn-lg" href="ESE6.html" > <b>This is the best ES6 post</b></a><br></h2> -->
+            {{!-- <p><input type="button" onclick="location.href='/programmingblog'" style="border-radius: 23.3rem;
+    font-size: x-large;
+" value="3.This is the best Programming Post"></p> --}}
+
+<div class="card" style="width: 15rem;">
+      {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+      <div class="card-body">
+        <h5 class="card-title">Programming Post</h5>
+        <p class="card-text">Angular is frontened programming langugage</p>
+        <a href="/programmingblog" class="btn btn-primary">Go to Programming Post</a>
+      </div>
+    </div>
+
+            <!-- <h2><a class="btn btn-primary btn-lg" href="Programming.html"> <b>This is the best programming post</b></a><br></h2> -->
+            {{!-- <p><input type="button" onclick="location.href='/jsblog'" style="border-radius: 23.3rem;
+    font-size: x-large;
+" value="4.This is the best JS Post"></p> --}}
+
+<div class="card" style="width: 15rem;">
+      {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+      <div class="card-body">
+        <h5 class="card-title">Javascript Post</h5>
+        <p class="card-text">Angular is frontened programming langugage</p>
+        <a href="/jsblog" class="btn btn-primary">Go to Javascript Post</a>
+      </div>
+    </div>
+            <br>
+            <!-- <h2><a class="btn btn-primary btn-lg" href="javascript.html"><b>This is the best JS post</b></a></h2> -->
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="lead"> &copy; copyright 2021 Blog App| Create Blog | Edit the Blog</p>
+    </div>
+    <br>
+    <button onclick="topFunction()" id="myBtn" title="go to top">Top of the Page</button>
+
+</body>
+</html>

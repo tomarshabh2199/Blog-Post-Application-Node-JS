@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Redux Page</title>
+
+
+</head>
+
+<style>
+    .lead {
+        font-style: inherit;
+        font-family: cursive;
+    }
+
+    a {
+        color: gainsboro;
+        /* text-decoration: overline; */
+    }
+
+    .footer1 {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: tan;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .fa {
+    font-size: 70px;
+    color: ghostwhite;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 50%;
+    user-select: none;
+}
+
+.fa:hover {
+  color:lightgreen;
+}
+
+    footer {
+        /* position: fixed; */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        background-color: initial;
+        color: currentColor;
+        font-size: medium;
+        line-height: 1;
+        margin-bottom: -11px;
+        vertical-align: auto;
+    }
+
+    
+</style>
+
+<body background="images/photo5.jpeg" width="80%" style="background-repeat: no-repeat; background-attachment: fixed;  
+  background-size: cover;">
+    <u>
+        <h1>
+            <p class="heading" style="font-family: cursive;
+    font-size: xxx-large;
+    font-weight: 900;
+    margin-top: revert;
+    margin-bottom: revert;
+    margin-left: 30px;
+    margin-right: 15px;">Redux Blog</p>
+        </h1>
+    </u>
+    <div align="center">
+        <img src="images/redux.jpeg" class="rounded class center imagestyle">
+    </div>
+    <br>
+    <br>
+
+    <p class="lead" style="margin-left: 20px;
+    margin-right: 20px;">
+        Redux is a predictable state container for JavaScript apps.
+        It helps you write applications that behave consistently, run in different environments (client, server, and
+        native)
+        and are easy to test. On top of that, it provides a great developer experience, such as live code editing
+        combined with a time traveling debugger.
+        You can use Redux together with React, or with any other view library. It is tiny (2kB, including dependencies),
+        but has a large ecosystem of addons available.
+        <br>
+        Redux is a predictable state container for JavaScript apps. As the application grows, it becomes difficult to
+        keep it organized and maintain data flow.
+        Redux solves this problem by managing application’s state with a single global object called Store.
+        Redux fundamental principles help in maintaining consistency throughout your application, which makes debugging
+        and testing easier.
+
+    </p>
+
+    <b> <u>
+            <h1 class="display-1">
+                <p class="lead" style="margin-left: 20px;
+    margin-right: 20px;">Blog created by:</p>
+            </h1>
+        </u>
+    </b>
+<p style="margin-left: 15px;
+    font-size: larger;">Shubham Tomar</p>
+    <a href="https://www.blogger.com/blog/posts/5633868168385153821?pli=1" style="    font-size: x-large;
+    font-style: italic;
+    font-family: cursive;
+    color: darkblue; margin-left: 20px;
+    margin-right: 20px;">@tomarshabh2199</a>
+    <br>
+    <br>
+
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+    {{!-- like and upvote button --}}
+    <script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+ 
+
+
+    <h1 class=" display-4" style="font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 2.2;
+    font-family: cursive; margin-left: 15px;"> Web References</h1>
+
+    <div class="container" style="overflow:auto">
+        <a href="https://redux.js.org/" type="button" class="btn btn-primary btn-lg" style="padding: -5.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: -4.5;
+    border-radius: 23.3rem;">More About Redux</a>
+
+        <br>
+        <br>
+        <!-- <a href="https://redux.js.org/" class="btn btn-info" role="button">Link 1</a><br> -->
+        <a href="https://www.tutorialspoint.com/redux/index.htm" type="button" class="btn btn-primary btn-lg" style="padding: -5.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: -4.5;
+    border-radius: 23.3rem;">Offical Documentation and Guide</a>
+
+        <br>
+        <!-- <a href="https://www.tutorialspoint.com/redux/index.htm" class="btn btn-info" role="button">Link 2</a> -->
+        <!-- </div> -->
+        <br>
+        <!-- //footer -->
+    </div>
+    {{!-- //Recommended Blogs --}}
+    <p style="font-size: xx-large;
+    font-family: cursive; margin-left: 15px;">Recommended Articles</p>
+
+<p class="lead">
+    <div class="text" style="margin-left: 15px;
+    margin-right: 15px; font-size:large;"> 1.Given a matrix mat][][] of size M x N which represents the topographic map of a region, and 0
+        denotes land and 1 denotes elevation,… <span class="read-more"><a
+                href="https://www.geeksforgeeks.org/maximum-height-of-an-elevation-possible-such-that-adjacent-matrix-cells-have-a-difference-of-at-most-height-1/">Read
+                More</a></span></div>
+    <br>
+
+  
+    <div class="text" style="margin-left: 15px;
+    margin-right: 15px; font-size:large;">2.Given an undirected graph consisting of N vertices and M edges and an array edges[][], with each
+        row representing two vertices connected by an edge,… <span class="read-more"><a
+                href="https://www.geeksforgeeks.org/minimum-degree-of-three-nodes-forming-a-triangle-in-a-given-graph/">Read
+                More</a>
+        </span></div>
+    <br>
+
+    <div class="text" style="margin-left: 15px;
+    margin-right: 15px; font-size:large;">3.Given an array arr[] consisting of N integers, the task is to find the maximum sum of any
+        subarray possible after removing at most one… <span class="read-more"><a
+                href="https://www.geeksforgeeks.org/maximum-subarray-sum-possible-after-removing-at-most-one-subarray/">Read
+                More</a>
+        </span></div>
+
+</p>
+
+    <hr class="display-1 hr1" style="border: -298;">
+    <footer class="footer">
+        <h2>Help</h2>
+        <a href="https://servicedesk.nagarro.com/" target="_blank" class="ga-footer" data-track="Help Center">Help
+            Center</a>
+        <a href="/go/helpforum" target="_blank" class="ga-footer" data-track="Help Forum">Help Forum</a>
+
+        <h2>Community</h2>
+        <a href="https://dev.to/" target="_blank" class="ga-footer" data-track="Blogger Buzz">Blogger Buzz</a>
+
+        <h2>Developers</h2>
+        <a href="/go/devapi" target="_blank" class="ga-footer" data-track="Blogger API">Blogger API</a>
+        <a href="/go/devforum" target="_blank" class="ga-footer" data-track="Developer Forum">Developer Forum</a>
+
+        <a href="/go/terms" target="_blank" class="ga-footer" data-track="Terms of Service">Terms of Service</a>
+        <a href="/go/privacy" target="_blank" class="ga-footer" data-track="Privacy">Privacy</a>
+        <a href="/go/contentpolicy" target="_blank" class="ga-footer" data-track="Content Policy">Content Policy</a>
+
+    </footer>
+
+    <div class="footer1">
+        <p class="lead"> &copy; copyright 2021 Blog App| Create Blog | Edit the Blog</p>
+    </div>
+    <br>
+</body>
+</html>
